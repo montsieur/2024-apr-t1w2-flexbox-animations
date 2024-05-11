@@ -1,0 +1,15 @@
+*{
+    --brown-grey:#403E3D;
+    color:#FFC6B9;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    background-color: var(--brown-grey);
+    font-family: Arial, Helvetica, sans-serif;
+    /* text align is horizontal */
+    text-align: center;
+    /* align items is vertical */
+    align-items: center;
+}
