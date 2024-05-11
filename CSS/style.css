@@ -32,7 +32,6 @@ header {
     justify-content: center;
     align-items: center;
     
-    
 }
 
 .logo p {
@@ -41,7 +40,6 @@ header {
     border: 10px solid white;
     padding: 1.5rem;
     border-radius: 20%;
-
 }
 
 nav a {
@@ -53,11 +51,30 @@ nav a {
     margin-right: 0.5rem;
 }
 
-nav a:hover {
+a:hover {
+    animation: spin 3s infinite linear;
     background-color: var(--blue-grey);
     color: black;
     font-weight: 700;
+
 }
+
+/* h1 {
+    animation: spin 3s infinite linear;
+} */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        background-color: red;
+    }
+
+    to {
+        transform: rotate(360deg);
+        background-color: yellow;
+    }
+}
+
 
 .training-option {
     margin-top: 15dvw;
@@ -96,3 +113,4 @@ h3 {
     }
 
 }
+
