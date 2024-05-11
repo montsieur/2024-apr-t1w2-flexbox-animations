@@ -47,12 +47,16 @@ header {
 nav a {
     padding: 0.5rem;
     text-decoration: none;
+    background-color: black;
+    border-radius: 15%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
 
-a:hover {
-    color: white;
+nav a:hover {
+    background-color: var(--blue-grey);
+    color: black;
+    font-weight: 700;
 }
 
 .training-option {
@@ -68,7 +72,7 @@ a:hover {
 }
 
 h3 {
-    color: white;
+    color: black;
 }
 
 @media screen and (min-width: 600px) {
