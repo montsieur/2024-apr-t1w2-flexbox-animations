@@ -51,8 +51,12 @@ nav a {
     margin-right: 0.5rem;
 }
 
-a:hover {
-    animation: spin 3s infinite linear;
+nav a:hover {
+    display:inline-block;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+        animation-timing-function: linear;
     background-color: var(--blue-grey);
     color: black;
     font-weight: 700;
@@ -64,17 +68,16 @@ a:hover {
 } */
 
 @keyframes spin {
-    from {
+    0% {
         transform: rotate(0deg);
-        background-color: red;
+        /* background-color: red; */
     }
 
-    to {
-        transform: rotate(360deg);
-        background-color: yellow;
+    100% {
+        transform: rotate(180deg);
+        /* background-color: yellow; */
     }
 }
-
 
 .training-option {
     margin-top: 15dvw;
